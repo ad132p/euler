@@ -2,11 +2,11 @@
 
 
 //TODO!!!
-void Pali_loop () {
+void Pali_loop (int L, int R) {
     for (int i = 999**2; int > 100**2; i--) {
         char Int_to_str[7];
-        sprints(Int_to_str, "%d", i);
-
+        sprints(Int_to_str, "%d", L * R);
+        if ()
     }
 }
 
@@ -22,4 +22,13 @@ int Palindrome(char *str, int left, int right) {
         Palindrome(str, left++, right--);
     }
     return 0;
+}
+
+int main () {
+
+    int L, R;
+    L = 999;
+    R = L;
+    Pali_loop(L, R);
+
 }

@@ -18,6 +18,6 @@ unsigned long fibbo_sum () {
 
 int main () {
     unsigned long sum = fibbo_sum();
-    printf("Sum of even number from Fibbonacci sequence until 4 million: %lu", sum);
+    printf("Sum of even numbers from Fibbonacci sequence until 4 million: %lu", sum);
     return 0;
 }

@@ -7,7 +7,6 @@
 
 int Palindrome(char *str, int left, int right) {
     for (;left <= right; left++, right--) {
-        printf("%d    %d\n", left, right);
         if (str[left] != str[right - 1]) {
             return 0;
         }
@@ -26,6 +25,7 @@ void Pali_loop(int left, int right) {
             if (Palindrome(product, begin, end - 1)) {
                 printf("Multipliers:%d, %d\n", left, right);
                 printf("Product:%d\n", left * right);
+                return;
             }
         }
     }

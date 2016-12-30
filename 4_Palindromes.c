@@ -35,6 +35,6 @@ int main () {
     int left, right;
     left = 999;
     right = left;
-    Pali_loop(p_left, p_right);
+    Pali_loop(left, right);
     return 0;
 }

@@ -22,7 +22,7 @@ void Pali_loop(int left, int right) {
             char product[7];
             sprintf(product, "%d", left * right);
             int end = strlen(product);
-            if (Palindrome(product, begin, end - 1)) {
+            if (Palindrome(product, begin, end)) {
                 printf("Multipliers:%d, %d\n", left, right);
                 printf("Product:%d\n", left * right);
                 return;

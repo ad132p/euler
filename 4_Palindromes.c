@@ -7,13 +7,11 @@
 // The following function checks whether a string is Palindrome:
 
 int Palindrome(char *str, int left, int right) {
-//  printf("Indexes:%d, %d\n", left, right);
     for (;left <= right; left++, right--) {
         if (str[left] != str[right]) {
             return 0;
         }
     }
-//  printf("You have succeeded!!!\n");
     return 1;
 }
 
@@ -25,7 +23,6 @@ void Pali_loop(char *result) {
             sprintf(product, "%d", left * right);
             int end = strlen(product);
             if (Palindrome(product, begin, end - 1)) {
-//              printf("Multipliers:%d, %d\n", left, right);
                 printf("Product:%d\n", left * right);
                 if (left * right > atoi(result)) {
                     strcpy(result, product);
@@ -41,5 +38,4 @@ int main () {
     Pali_loop(result);
     printf("Largest Palindrome: %s\n", result);
     return 0;
-
 }

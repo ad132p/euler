@@ -26,3 +26,6 @@ int main () {
     printf("10001st prime is: %d\n", prime_counter());
     return 0;
 }
+
+
+// I should really take a look on prime numbers' particularities.

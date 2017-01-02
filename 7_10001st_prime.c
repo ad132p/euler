@@ -17,7 +17,7 @@ int prime_counter() {
         if (is_it_prime(i)) {
             counter++;
         }
-        i++
+        i++;
     }
     return i - 1;
 }

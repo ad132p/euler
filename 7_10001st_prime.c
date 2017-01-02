@@ -13,15 +13,15 @@ int is_it_prime(int number) {
 }
 
 int prime_counter() {
-    int i = 0;
+    int i = 2;
     int counter = 0;
     while (counter < 10001) {
-        ++i;
         if (is_it_prime(i)) {
-            ++counter;
+            counter++;
         }
+        i++
     }
-    return i;
+    return i - 1;
 }
 
 

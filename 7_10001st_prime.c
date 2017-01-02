@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-// TODO: `prime counter` function doesn't return correct value for i.
-
 int is_it_prime(int number) {
     for (int j = 2; j < number; j++) {
         if (number % j == 0) {
@@ -23,8 +21,6 @@ int prime_counter() {
     }
     return i - 1;
 }
-
-
 
 int main () {
     printf("10001st prime is: %d\n", prime_counter());
